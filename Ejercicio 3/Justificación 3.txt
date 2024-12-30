@@ -1,1 +1,4 @@
+Justificación punto 3
+No debe exponerse información sensible en las variables globales, en especial si estas están relacionada con ambiente productivo. Esto implica una vulnerabilidad en la seguridad en caso de que algún usuario pueda acceder a los valores de estas variables. Se puede crear un archivo de variables de entorno .env para no exponer las variables dentro del código.
+Seria de utilidad la creación de un volumen para Redis, garantizando la persistencia de la información cargada en este en caso de ser reiniciado el contenedor.
 
