@@ -1,1 +1,4 @@
-
+Justificación punto 2
+El pipeline se divide en 5 steps, cada uno a cargo de un etapa en el proceso de testo y despliegue de la aplicación.
+Para este pipeline se considera la existencia previa de un Dockerfile en el directorio raíz, ya que a partir de este se crea construye la imagen. El repositorio es clonado y la imagen ejecutada con propósito de testear el código través del comando npm ejecutado en el container. Es necesario indicar las credenciales en el Registry donde se va a cargar la imagen, teniendo en cuenta que estas credenciales son datos sensibles.
+Finalmente se carga la imagen y se aplica la configuración en kubernetes.
