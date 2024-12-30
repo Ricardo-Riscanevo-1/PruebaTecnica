@@ -1,1 +1,8 @@
+Justificación punto 1
+Load Balancer: Recurso encargado de direccionar las peticiones entrantes 
+Cluster kubernetes: Recurso de Kubernetes encargado de la programación y gestión de contenedores que contendrán los servicios de las aplicación Web
+Pods: Unidades administradas en el cluster que almacena los contenedores creados. Se plantea unos pods para el despliegue de back-end y del front-end.
+BD: Base de datos postgresSQL o MongoDB a la cual se conecta los contenedores para realizar el almacenamiento de información.
+CI/CD: Servidor con Jenkins encargado de la ejecución de pipelines, facilitando asi los despliegues automáticos de los servicios de la aplicación. En estos pipeline se hace el cargado, testeo y despliegue de las imágenes de los contenedores.
+Grafana y Prometeo: Servidores en el cual se almacena Grafana y Prometeo para el monitoreo del sistema.
 
